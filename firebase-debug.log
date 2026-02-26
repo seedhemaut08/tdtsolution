@@ -1,0 +1,68 @@
+[debug] [2025-12-03T20:39:24.898Z] ----------------------------------------------------------------------
+[debug] [2025-12-03T20:39:24.901Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2025-12-03T20:39:24.901Z] CLI Version:   14.26.0
+[debug] [2025-12-03T20:39:24.901Z] Platform:      win32
+[debug] [2025-12-03T20:39:24.902Z] Node Version:  v24.11.1
+[debug] [2025-12-03T20:39:24.902Z] Time:          Wed Dec 03 2025 12:39:24 GMT-0800 (Pacific Standard Time)
+[debug] [2025-12-03T20:39:24.902Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\dell\Downloads\tdts_website (3)
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-12-03T20:40:35.007Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-12-03T20:40:35.007Z] > authorizing via signed-in user (lakshaybhatt08@gmail.com)
+[debug] [2025-12-03T20:40:57.889Z] Checked if tokens are valid: false, expires at: 1764791576999
+[debug] [2025-12-03T20:40:57.890Z] Checked if tokens are valid: false, expires at: 1764791576999
+[debug] [2025-12-03T20:40:57.890Z] > refreshing access token with scopes: []
+[debug] [2025-12-03T20:40:57.891Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-12-03T20:40:57.892Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-12-03T20:40:58.157Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-12-03T20:40:58.157Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-12-03T20:40:58.166Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1/projects:checkProjectId [none]
+[debug] [2025-12-03T20:40:58.166Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"proposedId":"tdts-website"}
+[debug] [2025-12-03T20:40:58.859Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1/projects:checkProjectId 200
+[debug] [2025-12-03T20:40:58.859Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1/projects:checkProjectId {"projectIdStatus":"PROJECT_ID_AVAILABLE","suggestedProjectId":"tdts-website"}
+[debug] [2025-12-03T20:42:03.266Z] Checked if tokens are valid: true, expires at: 1764798057158
+[debug] [2025-12-03T20:42:03.266Z] Checked if tokens are valid: true, expires at: 1764798057158
+[debug] [2025-12-03T20:42:03.266Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-12-03T20:42:03.266Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"tdts-website","name":"tdts-website"}
+[debug] [2025-12-03T20:42:05.054Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-12-03T20:42:05.054Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.5507134112355043499"}
+[debug] [2025-12-03T20:42:05.054Z] Checked if tokens are valid: true, expires at: 1764798057158
+[debug] [2025-12-03T20:42:05.055Z] Checked if tokens are valid: true, expires at: 1764798057158
+[debug] [2025-12-03T20:42:05.055Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5507134112355043499 [none]
+[debug] [2025-12-03T20:42:06.551Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5507134112355043499 200
+[debug] [2025-12-03T20:42:06.551Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5507134112355043499 {"name":"operations/create_project.global.5507134112355043499"}
+[debug] [2025-12-03T20:42:07.059Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-12-03T20:42:07.059Z] Checked if tokens are valid: true, expires at: 1764798057158
+[debug] [2025-12-03T20:42:07.060Z] Checked if tokens are valid: true, expires at: 1764798057158
+[debug] [2025-12-03T20:42:07.060Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5507134112355043499 [none]
+[debug] [2025-12-03T20:42:07.434Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5507134112355043499 200
+[debug] [2025-12-03T20:42:07.434Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.5507134112355043499 {"name":"operations/create_project.global.5507134112355043499","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"247140913772","projectId":"tdts-website","lifecycleState":"ACTIVE","name":"tdts-website","createTime":"2025-12-03T20:39:45.838814Z"}}
+[debug] [2025-12-03T20:42:07.436Z] Checked if tokens are valid: true, expires at: 1764798057158
+[debug] [2025-12-03T20:42:07.436Z] Checked if tokens are valid: true, expires at: 1764798057158
+[debug] [2025-12-03T20:42:07.437Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/tdts-website:addFirebase [none]
+[debug] [2025-12-03T20:42:08.791Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/tdts-website:addFirebase 403
+[debug] [2025-12-03T20:42:08.791Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/tdts-website:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-12-03T20:42:08.792Z] Request to https://firebase.googleapis.com/v1beta1/projects/tdts-website:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-12-03T20:42:08.989Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/tdts-website:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:53:12)
+    at RetryOperation._fn (C:\Users\dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:322:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
